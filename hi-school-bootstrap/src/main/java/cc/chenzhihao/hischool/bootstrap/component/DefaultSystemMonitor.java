@@ -28,17 +28,17 @@ public class DefaultSystemMonitor implements SystemMonitor {
 
     @Override
     public String projectGroupId() {
-        return this.getProjectGroupId();
+        return this.projectGroupId;
     }
 
     @Override
     public String projectArtifactId() {
-        return this.getProjectArtifactId();
+        return this.projectArtifactId;
     }
 
     @Override
     public String projectVersion() {
-        return this.getProjectVersion();
+        return this.projectVersion;
     }
 
     @Override

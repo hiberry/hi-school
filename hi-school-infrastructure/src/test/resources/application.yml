@@ -1,0 +1,13 @@
+spring:
+    datasource:
+        driver-class-name: org.h2.Driver
+        url: "jdbc:h2:mem:test"
+        username: root
+        password: test
+        schema: classpath:h2/schema.sql
+    h2:
+        console:
+            enabled: true
+            path: /h2-cancel
+            settings:
+                web-admin-password: "admin123"
