@@ -28,8 +28,8 @@
         </dependency>
 
         <dependency>
-            <groupId>org.springframework.boot</groupId>
-            <artifactId>spring-boot-starter</artifactId>
+            <groupId>cc.chenzhihao.hi</groupId>
+            <artifactId>hi-framework-spring</artifactId>
         </dependency>
 
     </dependencies>
