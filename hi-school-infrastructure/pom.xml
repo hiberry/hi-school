@@ -50,13 +50,6 @@
             <plugin>
                 <groupId>org.mybatis.generator</groupId>
                 <artifactId>mybatis-generator-maven-plugin</artifactId>
-                <dependencies>
-                    <dependency>
-                        <groupId>mysql</groupId>
-                        <artifactId>mysql-connector-java</artifactId>
-                        <version>8.0.27</version>
-                    </dependency>
-                </dependencies>
                 <configuration>
                     <configurationFile>libs/mbg/generatorConfig.xml</configurationFile>
                     <overwrite>true</overwrite>

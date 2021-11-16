@@ -1,6 +1,6 @@
 package cc.chenzhihao.hischool.face.http;
 
-import cc.chenzhihao.hischool.interfaces.result.Result;
+import cc.chenzhihao.hi.framework.common.api.Result;
 import cc.chenzhihao.hischool.service.hello.HelloService;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;

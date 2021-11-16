@@ -40,7 +40,6 @@ function execute() {
   cmd="mvn mybatis-generator:generate $MVN_D_ARGS"
   echo $cmd
 
-  cd ..
   exec $cmd
 }
 
