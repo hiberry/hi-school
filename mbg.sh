@@ -1,12 +1,15 @@
 #!/usr/bin/env bash
+# Mybatis Generator 触发器
 
-JDBC_HOST="127.0.0.1"
-JDBC_POST="3306"
-JDBC_DATABASE="hi-school"
-JDBC_USERNAME="root"
-JDBC_PASSWORD="1234"
+# 执行Mybatis Generator的maven模块名称
+TARGET_MODULE="hi-school-infrastructure"
 
 function input() {
+  JDBC_HOST="127.0.0.1"
+  JDBC_POST="3306"
+  JDBC_DATABASE="hi-school"
+  JDBC_USERNAME="root"
+  JDBC_PASSWORD="1234"
 
   read -p "input jdbc.host[default:$JDBC_HOST]:" INPUT_JDBC_HOST
   read -p "input jdbc.port[default:$JDBC_POST]:" INPUT_JDBC_POST
@@ -34,7 +37,7 @@ function input() {
 function execute() {
   input
 
-  MVN_D_ARGS="-pl hi-school-infrastructure"
+  MVN_D_ARGS="-pl $TARGET_MODULE"
   MVN_D_ARGS="$MVN_D_ARGS -Djdbc.host=$JDBC_HOST -Djdbc.port=$JDBC_POST -Djdbc.database=$JDBC_DATABASE -Djdbc.username=$JDBC_USERNAME -Djdbc.password=$JDBC_PASSWORD"
 
   cmd="mvn mybatis-generator:generate $MVN_D_ARGS"
